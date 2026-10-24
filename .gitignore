@@ -1,0 +1,4 @@
+node_modules/
+minigame/js/
+*.log
+minigame/project.private.config.json

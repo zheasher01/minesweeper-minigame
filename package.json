@@ -1,0 +1,19 @@
+{
+  "name": "minesweeper-minigame",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"tests/*.test.ts\"",
+    "typecheck": "tsc -p .",
+    "build": "esbuild src/main.ts --bundle --format=iife --target=es2017 --outfile=minigame/js/main.js",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "esbuild": "0.28.2",
+    "minigame-api-typings": "3.8.21",
+    "typescript": "5.9.3"
+  }
+}
